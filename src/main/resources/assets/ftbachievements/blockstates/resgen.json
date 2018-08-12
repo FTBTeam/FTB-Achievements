@@ -1,0 +1,49 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "transform": "forge:default-block",
+    "model": "orientable",
+    "textures": {
+      "particle": "ftbachievements:blocks/furnace_side",
+      "down": "ftbachievements:blocks/furnace_side",
+      "side": "ftbachievements:blocks/resgen_side_on"
+    }
+  },
+  "variants": {
+    "inventory": {
+      "transform": "forge:default-block",
+      "model": "orientable",
+      "textures": {
+        "front": "ftbachievements:blocks/resgen_side_on",
+        "top": "ftbachievements:blocks/resgen_top"
+      }
+    },
+    "facing": {
+      "north": {
+      },
+      "east": {
+        "y": 90
+      },
+      "south": {
+        "y": 180
+      },
+      "west": {
+        "y": 270
+      }
+    },
+    "active": {
+      "true": {
+        "textures": {
+          "front": "ftbachievements:blocks/resgen_side_on",
+          "top": "ftbachievements:blocks/resgen_top"
+        }
+      },
+      "false": {
+        "textures": {
+          "front": "ftbachievements:blocks/resgen_side_on",
+          "top": "ftbachievements:blocks/resgen_top"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "modListVersion": 2,
+  "modList": [{
+    "modid": "ftbachievements",
+    "name": "FTB Achievements",
+    "description": "A mod that takes achievements beyond the next level",
+    "version": "$version",
+    "mcversion": "$mcversion",
+    "url": "https://minecraft.curseforge.com/projects/ftb-achievements",
+    "updateUrl": "",
+    "authorList": [ "modmuss50" ],
+    "credits": "modmuss50",
+    "logoFile": "/assets/ftbachievements/textures/logo.png",
+    "requiredMods": [ "reborncore" ]
+  }]
+}

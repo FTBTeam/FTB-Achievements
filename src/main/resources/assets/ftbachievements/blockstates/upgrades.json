@@ -1,0 +1,76 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "builtin/generated",
+    "transform": "forge:default-item"
+  },
+  "variants": {
+    "type": {
+      "speedmk1": {
+        "textures": {
+          "layer0": "ftbachievements:items/speed_1"
+        }
+      },
+      "speedmk2": {
+        "textures": {
+          "layer0": "ftbachievements:items/speed_2"
+        }
+      },
+      "speedmk3": {
+        "textures": {
+          "layer0": "ftbachievements:items/speed_3"
+        }
+      },
+      "speedmk4": {
+        "textures": {
+          "layer0": "ftbachievements:items/speed_4"
+        }
+      },
+      "speedmk5": {
+        "textures": {
+          "layer0": "ftbachievements:items/speed_5"
+        }
+      },
+      "powermk1": {
+        "textures": {
+          "layer0": "ftbachievements:items/power_1"
+        }
+      },
+      "powermk2": {
+        "textures": {
+          "layer0": "ftbachievements:items/power_2"
+        }
+      },
+      "powermk3": {
+        "textures": {
+          "layer0": "ftbachievements:items/power_3"
+        }
+      },
+      "powermk4": {
+        "textures": {
+          "layer0": "ftbachievements:items/power_4"
+        }
+      },
+      "powermk5": {
+        "textures": {
+          "layer0": "ftbachievements:items/power_5"
+        }
+      },
+      "luckmk1": {
+        "textures": {
+          "layer0": "ftbachievements:items/luck_1"
+        }
+      },
+      "luckmk2": {
+        "textures": {
+          "layer0": "ftbachievements:items/luck_2"
+        }
+      },
+      "luckmk3": {
+        "textures": {
+          "layer0": "ftbachievements:items/luck_3"
+        }
+      }
+    }
+  }
+}

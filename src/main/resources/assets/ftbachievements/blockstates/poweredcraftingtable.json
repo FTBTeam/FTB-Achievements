@@ -1,0 +1,49 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "transform": "forge:default-block",
+    "model": "orientable",
+    "textures": {
+      "particle": "ftbachievements:blocks/table_side",
+      "down": "ftbachievements:blocks/table_top",
+      "side": "ftbachievements:blocks/table_side"
+    }
+  },
+  "variants": {
+    "inventory": {
+      "transform": "forge:default-block",
+      "model": "orientable",
+      "textures": {
+        "front": "ftbachievements:blocks/table_side",
+        "top": "ftbachievements:blocks/table_top"
+      }
+    },
+    "facing": {
+      "north": {
+      },
+      "east": {
+        "y": 90
+      },
+      "south": {
+        "y": 180
+      },
+      "west": {
+        "y": 270
+      }
+    },
+    "active": {
+      "true": {
+        "textures": {
+          "front": "ftbachievements:blocks/table_side",
+          "top": "ftbachievements:blocks/table_top"
+        }
+      },
+      "false": {
+        "textures": {
+          "front": "ftbachievements:blocks/table_side",
+          "top": "ftbachievements:blocks/table_top"
+        }
+      }
+    }
+  }
+}

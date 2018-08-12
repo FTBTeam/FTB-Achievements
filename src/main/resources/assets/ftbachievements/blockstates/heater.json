@@ -1,0 +1,49 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "transform": "forge:default-block",
+    "model": "orientable",
+    "textures": {
+      "particle": "ftbachievements:blocks/heater_side",
+      "down": "ftbachievements:blocks/heater_top",
+      "side": "ftbachievements:blocks/heater_side"
+    }
+  },
+  "variants": {
+    "inventory": {
+      "transform": "forge:default-block",
+      "model": "orientable",
+      "textures": {
+        "front": "ftbachievements:blocks/heater_side",
+        "top": "ftbachievements:blocks/heater_top"
+      }
+    },
+    "facing": {
+      "north": {
+      },
+      "east": {
+        "y": 90
+      },
+      "south": {
+        "y": 180
+      },
+      "west": {
+        "y": 270
+      }
+    },
+    "active": {
+      "true": {
+        "textures": {
+          "front": "ftbachievements:blocks/heater_front",
+          "top": "ftbachievements:blocks/heater_top"
+        }
+      },
+      "false": {
+        "textures": {
+          "front": "ftbachievements:blocks/heater_front",
+          "top": "ftbachievements:blocks/heater_top"
+        }
+      }
+    }
+  }
+}

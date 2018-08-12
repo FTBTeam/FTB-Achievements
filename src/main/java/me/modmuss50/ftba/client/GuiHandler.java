@@ -1,0 +1,40 @@
+package me.modmuss50.ftba.client;
+
+import me.modmuss50.ftba.blocks.input.TileInput;
+import me.modmuss50.ftba.client.gui.poweredCrafting.ContainerCraftingTable;
+import me.modmuss50.ftba.client.gui.poweredCrafting.GuiCraftingTable;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.common.network.IGuiHandler;
+
+/**
+ * Created by Mark on 05/02/2017.
+ */
+public class GuiHandler implements IGuiHandler {
+
+	public static int inputID = 0;
+	public static int craftingID = 1;
+
+	@Override
+	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
+		if (ID == inputID) {
+			return new ContainerInput((TileInput) world.getTileEntity(new BlockPos(x, y, z)));
+		}
+		if (ID == craftingID) {
+			return new ContainerCraftingTable(player, world, new BlockPos(x, y, z));
+		}
+		return null;
+	}
+
+	@Override
+	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
+		if (ID == inputID) {
+			return new GuiInput((TileInput) world.getTileEntity(new BlockPos(x, y, z)));
+		}
+		if (ID == craftingID) {
+			return new GuiCraftingTable(player, world, new BlockPos(x, y, z));
+		}
+		return null;
+	}
+}
