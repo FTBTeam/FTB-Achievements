@@ -17,6 +17,7 @@ import prospector.shootingstar.ShootingStar;
 import prospector.shootingstar.model.ModelCompound;
 import reborncore.api.tile.IMachineGuiHandler;
 import reborncore.common.blocks.BlockMachineBase;
+import reborncore.common.blocks.BlockWrenchEventHandler;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -30,6 +31,7 @@ public class BlockResGen extends BlockMachineBase implements ITopInfo {
 		setUnlocalizedName("resgen");
 		setCreativeTab(FTBAchievements.Tab.FTBA_TAB);
 		ShootingStar.registerModel(new ModelCompound("ftbachievements", this, ""));
+		BlockWrenchEventHandler.wrenableBlocks.remove(this);
 	}
 
 	@Nullable
@@ -56,12 +58,13 @@ public class BlockResGen extends BlockMachineBase implements ITopInfo {
 			TileResGen te = (TileResGen) tileEntity;
 			if (te.currentResource != null) {
 				probeInfo.item(te.currentResource.stack.copy());
+
+				if (te.currentResource.processTime > 20) {
+					probeInfo.progress((int)te.progress, te.currentResource.processTime, probeInfo.defaultProgressStyle()
+						.suffix(" Progress"));
+				}
 			}
 
-			if (te.currentResource.processTime > 20) {
-				probeInfo.progress((int)te.progress, te.currentResource.processTime, probeInfo.defaultProgressStyle()
-					.suffix(" Progress"));
-			}
 			if (te.speedModifier != 0) {
 				probeInfo.text("Speed " + te.speedModifier * 100 + "%");
 			}

@@ -17,6 +17,7 @@ import prospector.shootingstar.ShootingStar;
 import prospector.shootingstar.model.ModelCompound;
 import reborncore.api.tile.IMachineGuiHandler;
 import reborncore.common.blocks.BlockMachineBase;
+import reborncore.common.blocks.BlockWrenchEventHandler;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -27,6 +28,7 @@ public class BlockHeater extends BlockMachineBase implements ITopInfo {
 		setUnlocalizedName("heater");
 		setCreativeTab(FTBAchievements.Tab.FTBA_TAB);
 		ShootingStar.registerModel(new ModelCompound("ftbachievements", this, ""));
+		BlockWrenchEventHandler.wrenableBlocks.remove(this);
 	}
 
 	@Override

@@ -18,6 +18,7 @@ import prospector.shootingstar.ShootingStar;
 import prospector.shootingstar.model.ModelCompound;
 import reborncore.api.tile.IMachineGuiHandler;
 import reborncore.common.blocks.BlockMachineBase;
+import reborncore.common.blocks.BlockWrenchEventHandler;
 
 import java.util.List;
 
@@ -27,6 +28,7 @@ public class BlockPoweredCraftingTable extends BlockMachineBase {
 		setUnlocalizedName("craftingtable");
 		setCreativeTab(FTBAchievements.Tab.FTBA_TAB);
 		ShootingStar.registerModel(new ModelCompound("ftbachievements", this, ""));
+		BlockWrenchEventHandler.wrenableBlocks.remove(this);
 	}
 
 	@Override
