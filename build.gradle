@@ -98,6 +98,10 @@ repositories {
 		name "TiC"
 		url "http://dvs1.progwml6.com/files/maven"
 	}
+	maven {
+		name "LatvianModder"
+		url "https://maven.latmod.com/"
+	}
 }
 
 dependencies {
@@ -108,6 +112,7 @@ dependencies {
 	}
     deobfCompile "mcjty.theoneprobe:TheOneProbe-1.12:1.12-1.4.19-11"
 	deobfCompile "mezz.jei:jei_1.12.2:+"
+	deobfCompile "com.feed_the_beast.mods:FTBLib:+"
 }
 
 jar {

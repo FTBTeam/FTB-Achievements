@@ -17,8 +17,6 @@ public class ConfigFormat {
 
 	public List<GuiTrigger> guiTriggers;
 
-	public List<SCTrigger> scTriggers;
-
 	public List<BMTrigger> bmTriggers;
 
 	public List<DETrigger> deTriggers;

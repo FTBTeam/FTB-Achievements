@@ -21,7 +21,6 @@ import me.modmuss50.ftba.events.PlayerLoginEvent;
 import me.modmuss50.ftba.files.worldData.WorldDataManager;
 import me.modmuss50.ftba.items.ItemUpgrades;
 import me.modmuss50.ftba.modCompat.ModCompat;
-import me.modmuss50.ftba.modCompat.sc.StevesCartsCompat;
 import me.modmuss50.ftba.packets.*;
 import me.modmuss50.ftba.proxy.CommonProxy;
 import me.modmuss50.ftba.team.TeamScriptManager;
@@ -119,10 +118,6 @@ public class FTBAchievements {
 		FMLCommonHandler.instance().bus().register(PlayerLoginEvent.class);
 		proxy.init(event);
 		TimerServerHandler.reset(); //Sets this to 0 and what not
-		if (Loader.isModLoaded("stevescarts")) {
-			StevesCartsCompat.loadModules();
-			FMLCommonHandler.instance().bus().register(StevesCartsCompat.class);
-		}
 		try {
 			FarmLandFix.fix();
 		} catch (IllegalAccessException | NoSuchFieldException e) {

@@ -98,7 +98,6 @@ public class AchievementButton extends GuiButton {
 		getRequiements(lines, format.inputTriggers);
 		getRequiements(lines, format.sieveTriggers);
 		getRequiements(lines, format.guiTriggers);
-		getRequiements(lines, format.scTriggers);
 		getRequiements(lines, format.bmTriggers);
 		getRequiements(lines, format.deTriggers);
 		getRequiements(lines, format.vmTriggers);

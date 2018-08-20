@@ -45,7 +45,6 @@ public class CommandRemoveTrigger extends FTBCommandBase {
 		checkRemove(format.inputTriggers, achievement.name);
 		checkRemove(format.sieveTriggers, achievement.name);
 		checkRemove(format.guiTriggers, achievement.name);
-		checkRemove(format.scTriggers, achievement.name);
 		checkRemove(format.bmTriggers, achievement.name);
 		checkRemove(format.deTriggers, achievement.name);
 		checkRemove(format.vmTriggers, achievement.name);

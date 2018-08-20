@@ -94,9 +94,6 @@ public class ConfigManager {
 		config.craftingTriggers = new ArrayList<>();
 		config.inputTriggers = new ArrayList<>();
 		config.guiTriggers = new ArrayList<>();
-		if (Loader.isModLoaded("stevescarts")) {
-			config.scTriggers = new ArrayList<>();
-		}
 
 		//		FTBAchievement achievement = new FTBAchievement();
 		//		achievement.name = "achievement01";
