@@ -78,7 +78,7 @@ public class BlockResGen extends BlockMachineBase implements ITopInfo {
 	@Deprecated
 	public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
 		NonNullList<ItemStack> items = NonNullList.create();
-		super.getDrops(items, world, pos, state, fortune);
+		items.add(new ItemStack(this));
 		return items;
 	}
 
