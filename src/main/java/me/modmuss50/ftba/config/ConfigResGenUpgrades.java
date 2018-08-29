@@ -15,11 +15,11 @@ public class ConfigResGenUpgrades {
 	public static ConfigResGenUpgrades getDefault() {
 		ConfigResGenUpgrades configResGenUpgrades = new ConfigResGenUpgrades();
 		configResGenUpgrades.upgrades = new ArrayList<>();
-		createUpgrade(configResGenUpgrades.upgrades, "speedmk1", 0.1F, 0.1F, 0);
-		createUpgrade(configResGenUpgrades.upgrades, "speedmk2", 0.2F, 0.2F, 0);
-		createUpgrade(configResGenUpgrades.upgrades, "speedmk3", 0.3F, 0.3F, 0);
-		createUpgrade(configResGenUpgrades.upgrades, "speedmk4", 0.4F, 0.4F, 0);
-		createUpgrade(configResGenUpgrades.upgrades, "speedmk5", 0.5F, 0.5F, 0);
+		createUpgrade(configResGenUpgrades.upgrades, "speedmk1", 0.2F, 0.1F, 0);
+		createUpgrade(configResGenUpgrades.upgrades, "speedmk2", 0.4F, 0.2F, 0);
+		createUpgrade(configResGenUpgrades.upgrades, "speedmk3", 0.6F, 0.3F, 0);
+		createUpgrade(configResGenUpgrades.upgrades, "speedmk4", 0.8F, 0.4F, 0);
+		createUpgrade(configResGenUpgrades.upgrades, "speedmk5", 0.95F, 0.5F, 0);
 		createUpgrade(configResGenUpgrades.upgrades, "powermk1", 0.0F, -0.1F, 0);
 		createUpgrade(configResGenUpgrades.upgrades, "powermk2", 0.0F, -0.2F, 0);
 		createUpgrade(configResGenUpgrades.upgrades, "powermk3", 0.0F, -0.3F, 0);
