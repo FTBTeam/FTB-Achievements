@@ -75,13 +75,13 @@ public class FTBTeamUtil {
 		teamNameMap.clear();
 		Arrays.stream(TeamEnum.values()).forEach(teamEnum -> {
             Universe universe = event.getUniverse();
-            ForgeTeam team = new ForgeTeam(universe, teamEnum.getName(), TeamType.SERVER);
+            ForgeTeam team = new ForgeTeam(universe, universe.generateTeamUID((short) teamEnum.ordinal()), teamEnum.getName(), TeamType.SERVER);
             team.setColor(getFTBTeamColor(teamEnum));
             team.setTitle(teamEnum.getDisplayName());
             //We dont want people adding them self to the team
             team.setFreeToJoin(false);
             //TODO get some nice icons for the teams
-            universe.teams.put(teamEnum.getName(), team);
+			universe.addTeam(team);
             teamNameMap.put(teamEnum, teamEnum.getName());
         });
 	}

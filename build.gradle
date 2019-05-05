@@ -34,7 +34,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 
-version = "1.12.2-2.0.0"
+version = "1.12.2-2.1.0"
 
 def ENV = System.getenv()
 if (ENV.BUILD_NUMBER) {
@@ -42,7 +42,7 @@ if (ENV.BUILD_NUMBER) {
 }
 
 minecraft {
-	version = "1.12.2-14.23.4.2757"
+	version = "1.12.2-14.23.5.2836"
 	mappings = "snapshot_20170925"
 	replace "@MODVERSION@", project.version
 	useDepAts = true
@@ -111,7 +111,7 @@ dependencies {
 		transitive = false
 	}
     deobfCompile "mcjty.theoneprobe:TheOneProbe-1.12:1.12-1.4.19-11"
-	deobfCompile "mezz.jei:jei_1.12.2:+"
+	//deobfCompile "mezz.jei:jei_1.12.2:4.15.0.277"
 	deobfCompile "com.feed_the_beast.mods:FTBLib:+"
 }
 

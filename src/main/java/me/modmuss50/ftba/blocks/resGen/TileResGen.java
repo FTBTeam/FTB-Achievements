@@ -28,7 +28,6 @@ import java.util.stream.*;
  */
 public class TileResGen extends TilePowerAcceptor implements IResGenHandler {
 
-	public static PowerConfig powerConfig = new PowerConfig();
 	public float progress;
 	public float speedModifier = 1F;
 	public float powerModifier = 1F;
@@ -194,10 +193,6 @@ public class TileResGen extends TilePowerAcceptor implements IResGenHandler {
 		return false;
 	}
 
-	@Override
-	public IPowerConfig getPowerConfig() {
-		return powerConfig;
-	}
 
 	@Override
 	public void reset() {
@@ -226,26 +221,4 @@ public class TileResGen extends TilePowerAcceptor implements IResGenHandler {
 		return false;
 	}
 
-	private static class PowerConfig implements IPowerConfig {
-
-		@Override
-		public boolean eu() {
-			return true;
-		}
-
-		@Override
-		public boolean tesla() {
-			return true;
-		}
-
-		@Override
-		public boolean internal() {
-			return true;
-		}
-
-		@Override
-		public boolean forge() {
-			return true;
-		}
-	}
 }
