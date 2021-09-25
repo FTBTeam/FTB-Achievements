@@ -1,5 +1,8 @@
 # FTB-Achivements
 
+Use https://github.com/FTBTeam/FTB-Mods-Issues for any mod issues
+
+## Usages
 
 /ftba setChest - sets the reward chest to the one the player is looking at
 
